@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<style>
+   
+   .hero {
+     height: 100vh;
+     background: url('static/images/background.jpg') no-repeat center center;
+     background-size: cover;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+   }
+   .hero h1 {
+     color: rgb(238, 242, 243);
+     font-size: 4rem;
+   }
+.hero {
+ background-image: url('static/images/background.jpg'); 
+ background-size: cover;
+ background-position: center;
+ height: 100vh;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ text-align: center;
+ color: rgb(209, 25, 25);
+}
+
+.hero h1 {
+ font-size: 3rem;
+}
+.hero p {
+ font-size: 1.5rem;
+}
+
+@media (max-width: 992px) {
+ 
+ .hero h1 {
+   font-size: 2.5rem;
+ }
+ 
+ .hero p {
+   font-size: 1.25rem;
+ }
+.navbar-brand {
+   font-size: 1.5rem;
+ }
+
+ .btn-lg {
+   padding: 0.75rem 1.5rem;
+   font-size: 1.25rem;
+ }
+}
+@media (max-width: 768px) {
+  
+  .navbar-nav {
+    text-align: center;
+  }
+
+  .hero {
+    height: 70vh;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+.hero p {
+    font-size: 1rem;
+  }
+
+  .btn-lg {
+    font-size: 1rem;
+    padding: 0.5rem 1.25rem;
+  }
+  
+  .navbar-toggler {
+    margin-right: 0;
+  }
+}
+@media (max-width: 576px) {
+  
+  .navbar-brand {
+    font-size: 1.25rem;
+  }
+
+  .hero h1 {
+    font-size: 1.75rem;
+  }
+
+  .hero p {
+    font-size: 0.875rem;
+  }
+.btn-lg {
+    font-size: 0.875rem;
+    padding: 0.5rem 1rem;
+  }
+}
+
+</style>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-info">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">website</a>
+             <button class="navbar-toggler" type="button"
+data-bs-toggle="collapse" data-bs-target="">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarnav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#servicer">service</a> 
+                </li>
+                <li nclass="nav-item">
+                <a class="nav-link active"href="#appointment">appointment</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="{{url_for('login')}}">Admin</a>
+                </li>
+                </ul>
+                </div>
+                </div>
+            </nav>
+            <section class="hero">
+                <div class="text-center">
+                    <h1>SEASONS OF THE YEAR</h1>
+                    <p class="lead text-width"><B>WINTER, SPRING, SUMMER, RAINY</B></p>
+                        <a href="#services" class="btn btn-primary btn-lg">learn more</a>
+
+                        </div>
+                        </section>
+                        <section id="services" class="py=5">
+                          <div class="container">
+                            <div class="row text-center">
+                              <p class="lead">Seasons occur because Earth .</p>
+                            </div>
+                            <div class="row mt-4">
+                              <div class="col-md-4">
+                                <div class="card">
+                                  <img src="static/images/spring.jpg" class="card-img-top" alt="service 1">
+                                  <div class="card-body">
+                                    <h5 class="card-title">SPRING SEASON</h5>
+                                    <p class="card-text">MARCH TO APRIL</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-md-4">
+                                <div class="card">  
+                                  <img src="static/images/winter.jpg" class="card-img-top" alt="service 1">
+                                  <div class="card-body">
+                                    <h5 class="card-title">WINTER SEASON</h5>
+                                    <p class="card-text">DECEMBER TO MARCH </p>
+                              </div>
+                            </div>  
+                            </div>
+                            <div class="col-md-4">
+                              <div class="card">  
+                                <img src="static/images/summer.jpg" class="card-img-top" alt="service 1">
+                                <div class="card-body">
+                                  <h5 class="card-title">SUMMER SEASON</h5>
+                                  <p class="card-text">MARCH TO MAY </p>
+                                </div>
+                              </div>  
+                              </div>
+                              <div class="col-md-4">
+                                <div class="card">  
+                                  <img src="static/images/rainy.jpg" class="card-img-top" alt="service 1">
+                                  <div class="card-body">
+                                    <h5 class="card-title">RAINY SEASON</h5>
+                                    <p class="card-text">SEPTEMBER TO DECEMBER </p>
+
+                                  </div>
+                                </div>  
+                                </div>
+                                <div class="col-md-4">
+                                  <div class="card">  
+                                    <img src="static/images/AUTUMN.JPG" class="card-img-top" alt="service 1">
+                                    <div class="card-body">
+                                      <h5 class="card-title">AUTUMN SEASON</h5>
+                                      <p class="card-text"> SEPTEMBER TO OCTOBER</p>
+
+                                    </div>
+                                  </div>  
+                                  </div>
+                                  <div class="col-md-4">
+                                    <div class="card">  
+                                      <img src="static/images/MONSOON.JPG" class="card-img-top" alt="service 1">
+                                      <div class="card-body">
+                                        <h5 class="card-title">MONSOON SEASON</h5>
+                                        <p class="card-text">JUNE TO SEPTEMBER </p>
+                        </section>
+                        <section id="appointment" class="py-5 bg-light">
+                          <div class="container">
+                            <div class="row text-center">
+                            <h2>CLIMATE CONDITIONS</h2>
+                            <p class="lead">DETAILS REQUIRED</p>
+
+                          </div>
+                          <form id="appointmentForm" class="needs-validation" novalidate>
+                            <div class="mb-3">
+                              <label for="name" class="form-label">Full Name</label>
+                              <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                              <div class="invalid-feedback">Please Enter a Valid Email</div>
+
+                              <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" placeholder="enter your name" required> 
+                                <div class="invalid-feedback">Please Enter Your Valid Email.</div>
+                              </div>
+                              <div class="mb-3">
+                                <label for="date" class="form-label">Date</label>
+                                <input type="date" class="form-control" id="date" placeholder="enter your name" required> 
+                                <div class="invalid-feedback">Please Select Date.</div>
+                                <button type="submit" class="btn btn-primary w-100">submit</button>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                      </section>
+                      <footer class="bg-info text-white text-center py-3">
+                        <p>@ Summer ends, and autumn comes </p>
+                      </footer>
+
+                      <section id="appointment" class="py-5 bg-light">
+                        <div class="container">
+                            <h1>DETAILS FORMS</h1>
+                            <form action="/submit" method="post">
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">Full Name</label>
+                                    <input type="text" class="form-control" name="name" placeholder="Enter your name" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="mail" class="form-label">Email</label>
+                                    <input type="email" class="form-control" name="mail" placeholder="Enter your email" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="date" class="form-label"> Date</label>
+                                    <input type="date" class="form-control" id="date" name="date" required>
+                                </div>
+                                <button type="submit" class="btn btn-primary w-100">Submit</button>
+                            </form>
+                
+                            {% with messages = get_flashed_messages() %}
+                            {% if messages %}
+                                <div class="alert alert-success mt-3" role="alert">
+                                    <ul>
+                                        {% for message in messages %}
+                                            <li>{{ message }}</li>
+                                        {% endfor %}
+                                    </ul>
+                                </div>
+                            {% endif %}
+                            {% endwith %}
+                
+                            <br>
+                            <a href="{{ url_for('login') }}" class="btn btn-danger">Admin Login</a>
+                        </div>
+                    </section>
+                
+                    <footer class="bg-info text-white text-center py-3">
+                        <p>@ Summer ends, and autumn comes .</p>
+                    </footer>
+                
+                    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+                    <script>
+                        function restrictPastDate() {
+                            const today = new Date().toISOString().split('T')[0];
+                            document.getElementById('date').setAttribute('min', today);
+                        }
+                    </script>
+                </body>
+                </html>
+
+
+
+
+                        
+                    
+
